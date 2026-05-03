@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<!-- ============================================================
+  🌸 FILL IN ZONE 1 — Change the browser tab title
+  Replace "Her Name" with her actual name below
+============================================================ -->
+<title>Happy Birthday, Her Name 🌸</title>
+
+<link rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Serif+Display:ital@0;1&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- Floating petals -->
+<div class="petal-bg" id="petalBg"></div>
+
+<!-- Music toggle -->
+<button class="music-btn" id="musicBtn" title="Toggle">🎵</button>
+
+<!-- Toast notification -->
+<div class="toast" id="toast"></div>
+
+
+<!-- ═══════════════════════════════════════════════
+  HERO SECTION
+═══════════════════════════════════════════════ -->
+<div class="hero">
+  <div class="crown">👑</div>
+  <p class="hero-tag">A special day for a special soul</p>
+  <h1 class="hero-title">
+    Happy<span>Birthday</span>
+  </h1>
+
+  <!-- ============================================================
+    🌸 FILL IN ZONE 2 — Her name on the hero banner
+    Replace "Her Name" below with her actual name
+  ============================================================ -->
+  <p class="hero-name">Her Name</p>
+
+  <p class="hero-sub">🌸 Today the universe celebrates you 🌸</p>
+  <div class="scroll-cue">scroll <span>↓</span></div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════
+  PHOTO GALLERY SECTION
+═══════════════════════════════════════════════ -->
+<div class="divider"><div class="divider-line"></div><span class="divider-flower">🌷</span><div class="divider-line rev"></div></div>
+
+<section class="gallery-section reveal">
+  <p class="section-label">Memories & Moments</p>
+  <h2 class="section-title">The Beautiful You</h2>
+  <p class="gallery-intro">Every photo of you is a story worth telling.</p>
+
+  <div class="photo-grid">
+
+    <!-- ============================================================
+      🌸 FILL IN ZONE 3 — Her photos
+      For each photo:
+        1. Put the image file (e.g. photo1.jpg) in the same folder as index.html
+        2. Replace "images/photo1.jpg" with the actual filename
+        3. Replace "Caption one" with a short sweet caption
+        4. Copy/paste more <div class="photo-card"> blocks to add more photos
+        5. Delete any blocks you don't need
+    ============================================================ -->
+
+    <div class="photo-card">
+      <img src="images/photo1.jpg" alt="Photo 1" />
+      <p class="photo-caption">Caption one</p>
+    </div>
+
+    <div class="photo-card">
+      <img src="images/photo2.jpg" alt="Photo 2" />
+      <p class="photo-caption">Caption two</p>
+    </div>
+
+    <div class="photo-card">
+      <img src="images/photo3.jpg" alt="Photo 3" />
+      <p class="photo-caption">Caption three</p>
+    </div>
+
+    <div class="photo-card">
+      <img src="images/photo4.jpg" alt="Photo 4" />
+      <p class="photo-caption">Caption four</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+  MESSAGE / SPEECH SECTION
+═══════════════════════════════════════════════ -->
+<div class="divider"><div class="divider-line"></div><span class="divider-flower">💌</span><div class="divider-line rev"></div></div>
+
+<section class="message-section reveal">
+  <p class="section-label">From the heart</p>
+  <h2 class="section-title">My Words for You</h2>
+
+  <div class="message-card">
+
+    <!-- ============================================================
+      🌸 FILL IN ZONE 4 — Your speech / message to her
+      Write your heartfelt message between the <p> tags below.
+      You can use multiple <p> tags for paragraphs.
+      Delete the placeholder text and write yours.
+    ============================================================ -->
+    <div class="speech-text">
+      <p>Write your first paragraph here. Tell her what she means to you, how she makes the world better just by existing in it.</p>
+      <p>Write your second paragraph here. Maybe share a memory, an inside moment, something only you two know.</p>
+      <p>Write your third paragraph here. End with something powerful — a promise, a wish, words that will stay with her forever.</p>
+    </div>
+
+    <!-- ============================================================
+      🌸 FILL IN ZONE 5 — Your name (the sender)
+      Replace "Your Name" with your actual name
+    ============================================================ -->
+    <div class="message-from">
+      <span class="from-label">— With all my love,</span>
+      <span class="from-name">Your Name</span>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+  COUNTDOWN SECTION
+═══════════════════════════════════════════════ -->
+<div class="divider"><div class="divider-line"></div><span class="divider-flower">🕯️</span><div class="divider-line rev"></div></div>
+
+<section class="countdown-section reveal">
+  <p class="section-label">Counting Down</p>
+  <h2 class="section-title">To Her Special Day</h2>
+
+  <!-- ============================================================
+    🌸 FILL IN ZONE 6 — Her birthday date
+    Set the data-birthday attribute below in YYYY-MM-DD format
+    Example: data-birthday="2025-11-20"
+  ============================================================ -->
+  <div id="countdownTimer" data-birthday="2025-11-20">
+    <div class="countdown-display">
+      <div class="count-box"><span class="count-num" id="cd-days">--</span><span class="count-label">Days</span></div>
+      <div class="count-box"><span class="count-num" id="cd-hours">--</span><span class="count-label">Hours</span></div>
+      <div class="count-box"><span class="count-num" id="cd-mins">--</span><span class="count-label">Minutes</span></div>
+      <div class="count-box"><span class="count-num" id="cd-secs">--</span><span class="count-label">Seconds</span></div>
+    </div>
+
+    <!-- ============================================================
+      🌸 FILL IN ZONE 7 — Countdown message with her name
+      Replace "Her Name" in the text below
+    ============================================================ -->
+    <p class="countdown-msg" id="countdownMsg">🌸 Days until Her Name's special day!</p>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+  BIRTHDAY WISHES SECTION
+═══════════════════════════════════════════════ -->
+<div class="divider"><div class="divider-line"></div><span class="divider-flower">✨</span><div class="divider-line rev"></div></div>
+
+<section class="reveal">
+  <p class="section-label">Birthday Wishes</p>
+  <h2 class="section-title">Everything I Wish for You</h2>
+
+  <!-- ============================================================
+    🌸 FILL IN ZONE 8 (optional) — Customise the wishes
+    You can change the text inside each <p class="wish-text"> tag
+    to make the wishes more personal to her
+  ============================================================ -->
+  <div class="wishes-grid">
+    <div class="wish-card"><span class="wish-icon">🌺</span><p class="wish-text">May every morning greet you with the warmth of a thousand sunrises.</p></div>
+    <div class="wish-card"><span class="wish-icon">✨</span><p class="wish-text">May all the magic you pour into the world come back to you tenfold.</p></div>
+    <div class="wish-card"><span class="wish-icon">💛</span><p class="wish-text">May this year be the most joyful, most golden chapter of your story.</p></div>
+    <div class="wish-card"><span class="wish-icon">🦋</span><p class="wish-text">May you always know your worth — because it is immeasurable.</p></div>
+    <div class="wish-card"><span class="wish-icon">🎀</span><p class="wish-text">May laughter follow you everywhere and love never leave your side.</p></div>
+    <div class="wish-card"><span class="wish-icon">🌙</span><p class="wish-text">May your dreams grow bolder and your heart grow lighter every single day.</p></div>
+  </div>
+</section>
+
+
+<!-- Celebrate button -->
+<div class="action-row">
+  <button class="btn-primary" id="celebrateBtn">🎉 Celebrate!</button>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════
+  FOOTER
+═══════════════════════════════════════════════ -->
+<footer>
+  <div class="footer-heart">❤️</div>
+
+  <!-- ============================================================
+    🌸 FILL IN ZONE 9 — Footer message
+    Personalise the footer text. Replace the names below.
+  ============================================================ -->
+  <p class="footer-note">Made with all the love in the world, just for you, Her Name 💕 — Your Name</p>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
